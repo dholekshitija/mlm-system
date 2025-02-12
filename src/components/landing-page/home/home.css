@@ -1,0 +1,26 @@
+/* home.css */
+/* .home-header {
+    position: relative; 
+    background-image: url('../../../../public/assets/images/lsa-landing-background.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    padding: 100px 0;
+    text-align: center;
+  } */
+  
+  .home-header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Overlay color */
+    backdrop-filter: blur(20px); /* Adjust the blur intensity */
+    z-index: -1; /* Place the overlay behind the content */
+  }
+  
+  /* Other styles */
+  
