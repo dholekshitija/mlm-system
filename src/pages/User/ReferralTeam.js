@@ -23,6 +23,7 @@ import {
 import Navbar from "../../components/sidebar/Navbar";
 import UserSidebar from "../../components/sidebar/UserSidebar";
 import "../../components/sidebar/Dashboard.css";
+import PeopleAltIcon from '@mui/icons-material/PeopleAlt';
 
 const ReferralTeam = () => {
   const [totalEarnings, setTotalEarnings] = useState("₹1,25,000");
@@ -66,7 +67,8 @@ const ReferralTeam = () => {
               <Card >
               {/* className="gradientlight" sx={{color:"#ccd1d1"}} */}
                 <CardContent className="gradientlight">
-                  <Typography variant="h4">👥 My Referrals & Team</Typography>
+                  <Typography variant="h4">
+                    <PeopleAltIcon/> My Referrals & Team</Typography>
                 </CardContent>
               </Card>
             </Grid>
@@ -75,7 +77,7 @@ const ReferralTeam = () => {
             <Grid item xs={12} sm={6}>
               <Card>
                 <CardContent>
-                  <Typography variant="h6">👥 Total Referrals</Typography>
+                  <Typography variant="h6"><PeopleAltIcon/> Total Referrals</Typography>
                   <Typography variant="body1">Active: {totalReferrals.active}</Typography>
                   <Typography variant="body1">Inactive: {totalReferrals.inactive}</Typography>
                 </CardContent>
@@ -86,7 +88,7 @@ const ReferralTeam = () => {
             <Grid item xs={12} sm={6}>
               <Card>
                 <CardContent>
-                  <Typography variant="h6">👥 Referral Code & Link</Typography>
+                  <Typography variant="h6"> <PeopleAltIcon/> Referral Code & Link</Typography>
                   <Typography variant="body1">Code: {referralCode}</Typography>
                   <Button variant="contained" onClick={handleCopyReferral} className="mt-2">Copy & Share</Button>
                 </CardContent>
@@ -97,7 +99,7 @@ const ReferralTeam = () => {
             <Grid item xs={12}>
               <Card>
                 <CardContent>
-                  <Typography variant="h6">👥 Direct Referrals</Typography>
+                  <Typography variant="h6"><PeopleAltIcon/> Direct Referrals</Typography>
                   <TableContainer component={Paper} className="mt-2">
                     <Table>
                       <TableHead>

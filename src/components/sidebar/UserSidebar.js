@@ -99,7 +99,7 @@ export default function UserSidebar() {
         </DrawerHeader>
         <Divider />
         <List>
-          <ListItem disablePadding sx={{ display: "block" }} onClick={()=>navigate("/dashboard")}>
+          <ListItem disablePadding sx={{ display: "block" }} onClick={()=>navigate("/user")}>
             <ListItemButton
               sx={[
                 {
@@ -133,7 +133,7 @@ export default function UserSidebar() {
                 <InboxIcon />
               </ListItemIcon>
               <ListItemText
-                primary="Dashboard"
+                primary="Home"
                 sx={[
                   open
                     ? {
@@ -149,7 +149,7 @@ export default function UserSidebar() {
         </List>
         <Divider />
         <List>
-          <ListItem disablePadding sx={{ display: "block" }} onClick={()=>navigate("/earning")}>
+          <ListItem disablePadding sx={{ display: "block" }} onClick={()=>navigate("/user/earning")}>
             <ListItemButton
               sx={[
                 {
@@ -183,7 +183,7 @@ export default function UserSidebar() {
                 <InboxIcon />
               </ListItemIcon>
               <ListItemText
-                primary="My Earning Section"
+                primary="My Earning"
                 sx={[
                   open
                     ? {
@@ -200,7 +200,7 @@ export default function UserSidebar() {
         <Divider />
 
         <List>
-          <ListItem disablePadding sx={{ display: "block" }} onClick={()=>navigate("/")}>
+          <ListItem disablePadding sx={{ display: "block" }} onClick={()=>navigate("/user/referrals")}>
             <ListItemButton
               sx={[
                 {
@@ -251,7 +251,7 @@ export default function UserSidebar() {
         <Divider />
 
         <List>
-          <ListItem disablePadding sx={{ display: "block" }} onClick={()=>navigate("/")}>
+          <ListItem disablePadding sx={{ display: "block" }} onClick={()=>navigate("/user/purchase")}>
             <ListItemButton
               sx={[
                 {
@@ -285,7 +285,7 @@ export default function UserSidebar() {
                 <InboxIcon />
               </ListItemIcon>
               <ListItemText
-                primary="My Purchases & Product Access"
+                primary="My Purchases"
                 sx={[
                   open
                     ? {
@@ -302,7 +302,7 @@ export default function UserSidebar() {
         <Divider />
 
         <List>
-          <ListItem disablePadding sx={{ display: "block" }} onClick={()=>navigate("/")}>
+          <ListItem disablePadding sx={{ display: "block" }} onClick={()=>navigate("/user/commisions")}>
             <ListItemButton
               sx={[
                 {
@@ -336,7 +336,7 @@ export default function UserSidebar() {
                 <InboxIcon />
               </ListItemIcon>
               <ListItemText
-                primary="Sales & Commission Details"
+                primary="Sales & Commission"
                 sx={[
                   open
                     ? {
@@ -353,7 +353,7 @@ export default function UserSidebar() {
         <Divider />
 
         <List>
-          <ListItem disablePadding sx={{ display: "block" }} onClick={()=>navigate("/")}>
+          <ListItem disablePadding sx={{ display: "block" }} onClick={()=>navigate("/user/settings")}>
             <ListItemButton
               sx={[
                 {
@@ -387,7 +387,7 @@ export default function UserSidebar() {
                 <InboxIcon />
               </ListItemIcon>
               <ListItemText
-                primary="Profile & Settings"
+                primary="Settings"
                 sx={[
                   open
                     ? {
@@ -404,7 +404,7 @@ export default function UserSidebar() {
         <Divider />
 
         <List>
-          <ListItem disablePadding sx={{ display: "block" }} onClick={()=>navigate("/")}>
+          <ListItem disablePadding sx={{ display: "block" }} onClick={()=>navigate("/user")}>
             <ListItemButton
               sx={[
                 {

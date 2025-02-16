@@ -7,6 +7,7 @@ import Navbar from "../../components/sidebar/Navbar";
 import "../../components/sidebar/Dashboard.css";
 
 
+
 const Dashboard = () => {
   const [referralCode] = useState("ABC123XYZ");
   const [otpStatus] = useState(true);

@@ -2,18 +2,18 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 import { Box } from "@mui/material";
-import UserSidebar from "../components/sidebar/UserSidebar";
+import Navbar from "../../components/sidebar/Navbar";
+import UserSidebar from "../../components/sidebar/UserSidebar";
 
-
-const UserLayout = () => {
+const UserIndex = () => {
   return (
     <Box sx={{ display: "flex" }}>
-    <UserSidebar />
-      
+      <UserSidebar/>
+
       {/* Main Content */}
       <Box sx={{ flexGrow: 1, p: 3 }}>
-        <Navbar />
-        
+        <Navbar/>
+
         {/* Page Content (Dynamically changes based on route) */}
         <Outlet />
       </Box>
@@ -21,4 +21,4 @@ const UserLayout = () => {
   );
 };
 
-export default UserLayout;
+export default UserIndex;

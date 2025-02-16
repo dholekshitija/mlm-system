@@ -15,6 +15,8 @@ import {
   Paper,
 } from "@mui/material";
 import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import StoreIcon from '@mui/icons-material/Store';
 import Navbar from "../../components/sidebar/Navbar";
 import UserSidebar from "../../components/sidebar/UserSidebar";
 import "../../components/sidebar/Dashboard.css";
@@ -42,7 +44,7 @@ const Purchase = () => {
               <Card>
                 <CardContent>
                   <Typography variant="h5">
-                    <ShoppingBagIcon/>My Purchases & Product Access</Typography>
+                    <ShoppingCartIcon/>My Purchases & Product Access</Typography>
                 </CardContent>
               </Card>
             </Grid>
@@ -51,7 +53,7 @@ const Purchase = () => {
             <Grid item xs={12}>
               <Card>
                 <CardContent>
-                  <Typography variant="h6">Purchased Products</Typography>
+                  <Typography variant="h6"><StoreIcon/> Purchased Products</Typography>
                   <TableContainer component={Paper} className="mt-2">
                     <Table>
                       <TableHead>
